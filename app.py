@@ -132,7 +132,6 @@ using_template = "The name is {} and the breed is {}".format(cat['name'], cat['b
 # using_template = using_template.format(cat['name'], cat['breed'])
 print(using_template)
 
-
 # Control flow if: elif: else:
 
 
