@@ -154,11 +154,68 @@ else:
 # }
 
 # Sprint 3 LOOPS FUNCTIONS
+veggies = ['carrots', 'kale', 'spinach']
+# for in loop
 
+for veggie in veggies:
+    print(f"I love {veggie}")
 
+# with the iterator using key word enumerate
+for index, veggie in enumerate(veggies):
+    print(f"{index}. I love {veggie}")
 
+cool_info = {
+  'name': 'Sophia',
+  'error_catcher': True,
+  'code_monster': 'yep that is me'
+}
 
+# for in loop get access to the keys of the dictionary
+for key in cool_info:
+    print(key, cool_info[key])
 
+# to loop through the avlues of a dictionary
+for value in cool_info.values():
+    print(value)
+
+for i in range(10):
+    print(i)
+
+# range( start, stop, step)
+for i in range(5, 10, 2):
+    print(i)
+print('-------------')
+print(i)
+
+# let i = 5;
+# for (let i = 0; i < 10; i++) {
+#   // some statements
+# }
+# // Here i is 5
+
+i = 5
+for i in range(10):
+    print(i)
+    i=5 #the final reassignment
+
+print(i)
+
+# functions
+# function (), const coolArrow = ()=> {}
+
+# def
+def gather_input(default_name = 'Bobby'):
+    your_name = default_name
+    friend = input("Enter your friends name: ")
+    print(f"Hello {friend}. {your_name} says hi!")
+
+gather_input('James')
+gather_input()
+
+def veggie_love_list_function(veggie):
+  return (f"I love {veggie}")
+veggie_love_list = map(veggie_love_list_function, veggies)
+print(list(veggie_love_list))
 
 
 
