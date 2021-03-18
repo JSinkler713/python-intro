@@ -174,9 +174,12 @@ cool_info = {
 for key in cool_info:
     print(key, cool_info[key])
 
-# to loop through the avlues of a dictionary
+# to loop through the values of a dictionary
 for value in cool_info.values():
     print(value)
+
+for key, value in cool_info.items():
+    print(f"{key} : {value}")
 
 for i in range(10):
     print(i)
